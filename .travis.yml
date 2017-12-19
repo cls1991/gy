@@ -7,7 +7,6 @@ python:
   - "3.6"
 # command to install dependencies
 install:
-  - pip install pytest
   - pip install gy
 # command to run tests
 script:
