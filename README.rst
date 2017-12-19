@@ -15,6 +15,33 @@ gy
 
 Yet another .gitignore magician in your command line.
 
+☤ Quickstart
+------------
+
+Generate .gitignore for certain language, e.g. Lua:
+
+::
+
+    $ gy generate lua
+
+Multiple languages, e.g. Python, Java, Lisp:
+
+::
+
+    $ gy generate python java lisp
+
+To update archive folder, simply run:
+
+::
+
+    $ gy update
+
+List all supported languages:
+
+::
+
+    $ gy ls
+
 ☤ Installation
 --------------
 

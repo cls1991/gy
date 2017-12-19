@@ -8,7 +8,7 @@ with open('README.rst', 'r') as f:
 
 setup(
     name='gy',
-    version='1.0.0',
+    version='1.0.1',
     keywords=['.gitignore', 'magician'],
     description='Yet another .gitignore magician in your command line.',
     long_description=readme,
