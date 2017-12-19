@@ -39,5 +39,5 @@ You can install "gy" via pip from `PyPI <https://pypi.python.org/pypi/gy>`_:
 
     Commands:
       generate  generate .gitignore file
-      show      show all supported languages
-      update    update .gitignore zip
+      ls        list all supported languages
+      update    update archive folder

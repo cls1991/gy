@@ -8,7 +8,7 @@ with open('README.rst', 'r') as f:
 
 setup(
     name='gy',
-    version='0.1.1',
+    version='1.0.0',
     keywords=['.gitignore', 'magician'],
     description='Yet another .gitignore magician in your command line.',
     long_description=readme,
@@ -18,15 +18,20 @@ setup(
     py_modules=['gy'],
     install_requires=[
         'click>=6.7',
+        'colorama>=0.3.9',
+        'requests>=2.18.4',
         'pytest>=3.3.1'
     ],
+    package_data={
+        'archive': ['gitignore-master/*.gitignore', 'gitignore-master/Global/*.gitignore']
+    },
     license='Apache License 2.0',
     zip_safe=False,
     entry_points={
-        'console_scripts': ['gy = gy:main']
+        'console_scripts': ['gy = gy:cli']
     },
     classifiers=[
-        'Development Status :: 1 - Planning',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'Natural Language :: English',
         'License :: OSI Approved :: Apache Software License',

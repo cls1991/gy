@@ -103,5 +103,8 @@ ENV/
 # pycharm project settings
 .idea/
 
+# cache
+archive/
+
 # macos
 .DS_Store

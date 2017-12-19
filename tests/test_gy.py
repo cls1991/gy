@@ -23,12 +23,14 @@ def test_gy_update():
     assert execute(['gy', 'update'])
 
 
-def test_gy_show():
-    assert execute(['gy', 'show'])
+def test_gy_ls():
+    assert execute(['gy', 'ls'])
 
 
 def test_gy_generate():
     assert execute(['gy', 'generate'])
+    assert execute(['gy', 'generate', 'java'])
+    assert execute(['gy', 'generate', 'java', 'lua'])
 
 
 def test_gy_help():
