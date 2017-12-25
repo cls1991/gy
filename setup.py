@@ -8,7 +8,7 @@ with open('README.rst', 'r') as f:
 
 setup(
     name='gy',
-    version='1.0.1',
+    version='1.0.2',
     keywords=['.gitignore', 'magician'],
     description='Yet another .gitignore magician in your command line.',
     long_description=readme,
@@ -18,7 +18,6 @@ setup(
     py_modules=['gy'],
     install_requires=[
         'click>=6.7',
-        'colorama>=0.3.9',
         'requests>=2.18.4',
         'pytest>=3.3.1'
     ],
@@ -27,6 +26,7 @@ setup(
     },
     license='Apache License 2.0',
     zip_safe=False,
+    platforms='any',
     entry_points={
         'console_scripts': ['gy = gy:cli']
     },
